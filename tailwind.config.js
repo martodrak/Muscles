@@ -11,8 +11,8 @@ export default {
       },
       keyframes: {
         floatSideToSide: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(80vw)" },
+          "0%": { transform: "translateX(5vw)" },
+          "100%": { transform: "translateX(95vw)" },
         },
       },
     },
