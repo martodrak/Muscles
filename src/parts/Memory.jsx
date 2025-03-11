@@ -18,7 +18,7 @@ export const Memory = ({ children }) => {
       latin: "Biceps Brachii",
       description:
         "Má dvě hlavy: dlouhou a krátkou. Je zde také brachialis, malý sval mezi hlavami. Aktivuje se při tahání a flexi paže. Cvičení: bicepsové zdvihy s činkami, shyby s úzkým úchopem. Pohyb: zvedání předloktí směrem k rameni.",
-      image: "images/panak_biceps.jpg",
+      image: "images/panak_bicepsNP.png",
     },
     {
       name: "Břišní sval",

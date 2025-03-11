@@ -14,7 +14,7 @@ export default function Card({ data }) {
         <img src={image} className="w-[155px] h-[260px]" alt="sval" />
       </div>
       <button className="button__small bg-green-500 text-white mt-10">
-        Podrobnosti
+        Podrobnosti 
       </button>
     </a>
   );
