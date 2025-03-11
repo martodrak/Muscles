@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <img className="lg:w-[25%] w-[50%]" src="images/bezec.png" />
 
-      <div className="group flex flex-col border-2 hover:border-green-300 duration-300 rounded-xl px-6 py-4 min-w-[600px] items-center justify-center mt-16">
+      <div className="group flex flex-col border-2 hover:border-green-300 duration-300 rounded-xl px-6 py-4 lg:min-w-[600px] max-w-[200px] items-center justify-center mt-16">
         <p className="text-3xl mt-2 font-semibold">
           Všechy cviků co budeš potřebovat
         </p>

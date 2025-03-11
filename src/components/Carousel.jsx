@@ -3,7 +3,7 @@ import { useData } from "../parts/Memory";
 
 export default function Carousel() {
   const [index, setIndex] = useState(0);
-  const { musclesData } = useData();
+  const { musclesData, screenSize } = useData();
   useEffect(() => {
     const interval = setInterval(() => {
       const randomIndex = Math.floor(Math.random() * musclesData.length);
@@ -19,13 +19,15 @@ export default function Carousel() {
         <p className="text-gray-300">{musclesData[index].name}</p>
       </div>
 
-      <div className="flex flex-col items-center justify-center">
-        <img
-          className="w-[155px] h-[260px]"
-          src={musclesData[index + 1].image}
-        />
-        <p className="text-gray-300">{musclesData[index + 1].name}</p>
-      </div>
+      {screenSize.width > 1024 && (
+        <div className="flex flex-col items-center justify-center">
+          <img
+            className="w-[155px] h-[260px]"
+            src={musclesData[index + 1].image}
+          />
+          <p className="text-gray-300">{musclesData[index + 1].name}</p>
+        </div>
+      )}
     </div>
   );
 }

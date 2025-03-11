@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 
 // Define a default context value
 
@@ -12,8 +12,6 @@ export const useData = () => {
 
 // Memory Provider Component
 export const Memory = ({ children }) => {
-  const name = "hello";
-
   const musclesData = [
     {
       name: "Bicepsový sval",
@@ -87,9 +85,27 @@ export const Memory = ({ children }) => {
     },
   ];
 
-  // Context value with properly typed `habits` state
+  const [screenSize, setScreenSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const contextValue = {
     musclesData,
+    screenSize,
   };
 
   return (
