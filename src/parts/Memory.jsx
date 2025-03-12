@@ -28,14 +28,14 @@ export const Memory = ({ children }) => {
       image: "images/panak_ramena.png",
     },
     {
-      name: "Bicepsový svaly",
+      name: "Bicepsové svaly",
       latin: "Biceps Brachii",
       description:
         "Má dvě hlavy: dlouhou a krátkou. Je zde také brachialis, malý sval mezi hlavami. Aktivuje se při tahání a flexi paže. Cvičení: bicepsové zdvihy s činkami, shyby s úzkým úchopem. Pohyb: zvedání předloktí směrem k rameni.",
       image: "images/panak_bicepsNP.png",
     },
     {
-      name: "Tricepsový svaly",
+      name: "Tricepsové svaly",
       latin: "Triceps Brachii",
       description:
         "Má tři části: Dlouhá hlava, boční hlava a střední hlava. Aktivuje se při tlacích nebo extendování paží. Cvičení: tricepsové stahování na kladce, kickbacky, bench press s úzkým úchopem. Pohyb: protažení paže a stlačení lokte směrem dolů.",
@@ -63,18 +63,11 @@ export const Memory = ({ children }) => {
       image: "images/panak_zada.png",
     },
     {
-      name: "Přední stehenní svaly",
+      name: "Stehenní svaly",
       latin: "Quadriceps",
       description:
         "Má čtyři části: Rectus femoris, vastus medialis, vastus lateralis, vastus intermedius. Aktivuje se při prodlužování kolene. Cvičení: dřepy, leg press, výpady. Pohyb: extenze kolene.",
       image: "images/panak_stehna.png",
-    },
-    {
-      name: " Zadní stehenní svaly",
-      latin: "Deltoideus",
-      description:
-        "Má tři části: Přední – zvedání paže dopředu, Střední – zvedání paže do stran, Zadní – zvedání paže dozadu. Aktivuje se při tlakových a zvedacích pohybech. Cvičení: shoulder press, boční a přední zdvihy. Pohybové směry: přední, boční a zadní pohyb.",
-      image: "images/panak_hems.png",
     },
     {
       name: "Hýžďové svaly",
@@ -84,11 +77,18 @@ export const Memory = ({ children }) => {
       image: "images/panak_hyzde.png",
     },
     {
-      name: "Lýtkový svaly",
+      name: "Lýtkové svaly",
       latin: "Gastrocnemius",
       description:
         "Má dvě hlavy: vnitřní a vnější. Aktivuje se při zvedání paty. Cvičení: výpony na lýtkách, sedící výpony. Pohyb: zvedání paty směrem vzhůru (flexe v kotníku). Pohybové směry: plantární flexe v kotníku.",
       image: "images/panak_lytka.png",
+    },
+    {
+      name: "Zadní stehenní svaly",
+      latin: "Hamstring",
+      description:
+        "Zadní část stehna řadíme: dvojhlavý sval stehenní, sval pološlašitý a sval poloblanitý. Aktivuje se ohybem spodní části nohy v kolenním kloubu je hlavní funkcí, kterou mají tyto svaly za úkol. Cvičení: rumunský mrtvý tah, leg curl na stroji (zakopávání). Pohyb: flexe kolene, extenze kyčle.",
+      image: "images/panak_hems.png",
     },
   ];
 
