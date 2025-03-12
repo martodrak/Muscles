@@ -16,7 +16,7 @@ export default function Carousel() {
     <div className="flex items-center gap-16 justify-center mt-6">
       <div className="flex flex-col items-center justify-center">
         <img className="w-[155px] h-[260px]" src={musclesData[index].image} />
-        <p className="text-gray-300">{musclesData[index].name}</p>
+        <p className="text-black-300">{musclesData[index].name}</p>
       </div>
 
       {screenSize.width > 1024 && (
@@ -25,7 +25,7 @@ export default function Carousel() {
             className="w-[155px] h-[260px]"
             src={musclesData[index + 1].image}
           />
-          <p className="text-gray-300">{musclesData[index + 1].name}</p>
+          <p className="text-black-300">{musclesData[index + 1].name}</p>
         </div>
       )}
     </div>
