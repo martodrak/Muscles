@@ -27,7 +27,7 @@ export default function Home() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         className="lg:w-[25%] w-[50%]"
-        src="images/bezec.png"
+        src="images/logoFinal.png"
       />
 
       <motion.div
