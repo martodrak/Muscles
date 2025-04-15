@@ -16,7 +16,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="" element={<Home />} />
-        <Route path="muscles" element={<Muscles />} />
+        <Route path="/muscles" element={<Muscles />} />
         <Route path="/contact" element={<Contact />} />
         {musclesData.map((muscleData, i) => (
           <Route
