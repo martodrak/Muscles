@@ -59,7 +59,7 @@ export const Memory = ({ children }) => {
       name: "Zádové svaly",
       latin: "Latissimus Dorsi",
       description:
-        "Skládá se z mnoha svalů, například trapezy, latisimy atp. Aktivuje se při tahání. Cvičení: shyby, přítahy v předklonu, stahování kladky. Pohyb: zvedání paží a přitahování rukou směrem k tělu. Pohybové směry: vertikální (při shybování) a horizontální (při přítazích).",
+        "Zádové svalstvo tvoří trapézové svaly, široký sval zádový, svaly mezi lopatkami a zdvihače lopatek. Tyto svaly se aktivují hlavně při tahových pohybech. Typická cvičení: shyby, přítahy v předklonu, stahování horní kladky. Hlavní funkce: zvedání paží a přitahování rukou směrem k tělu. Pohybové směry: Vertikální tahy – například shyby. Horizontální tahy – například přítahy v předklonu.",
       image: "images/panak_zada.png",
     },
     {

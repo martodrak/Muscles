@@ -11,7 +11,7 @@ export default function MuscleDetail({ data }) {
         <p className="absolute top-2 right-4 text-gray-400 text-sm">
           "{latin}"
         </p>
-        <p className="font-bold text-2xl md:text-3xl mt-2 text-center">
+        <p className="font-bold text-xl md:text-3xl mt-2 text-center">
           {name}
         </p>
         <div className="border-2 w-full max-w-[300px] mt-2" />
@@ -28,7 +28,7 @@ export default function MuscleDetail({ data }) {
       </div>
 
       {/* Video Section */}
-      <div className="flex flex-col mt-16 md:mt-32 items-center justify-center w-full">
+      <div className="flex flex-col mt-16 md:mt-32 items-center justify-center w-full ">
         <p className="text-3xl md:text-6xl mb-4 md:mb-8 self-start md:ml-0 ml-4">
           Video ukázka
         </p>

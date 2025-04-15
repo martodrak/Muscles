@@ -8,7 +8,7 @@ const VideoPlayer = () => {
       <div className="w-full max-w-s2xl">
         <video controls className="w-full rounded shadow-lg">
           <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            src="images/baf.MP4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
