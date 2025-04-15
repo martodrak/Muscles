@@ -2,7 +2,7 @@ import React from "react";
 import VideoPlayer from "../components/VideoPlayer";
 
 export default function MuscleDetail({ data }) {
-  const { name, description, image, latin } = data;
+  const { name, description, image, latin, videoLink } = data;
 
   return (
     <div className="flex flex-col items-center justify-center px-6 md:px-32 mt-10">
@@ -32,7 +32,7 @@ export default function MuscleDetail({ data }) {
         <p className="text-3xl md:text-6xl mb-4 md:mb-8 self-start md:ml-0 ml-4">
           Video ukázka
         </p>
-        <VideoPlayer />
+        <VideoPlayer videoLink={videoLink} />
       </div>
     </div>
   );
