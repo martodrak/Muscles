@@ -18,7 +18,7 @@ export default function Home() {
           První den V gymu?
         </p>
         <p className="ml-16 lg:ml-64 text-2xl lg:text-4xl lg:mt-6 mt-4">
-          tak to si správně!
+          tak to jsi správně!
         </p>
       </motion.div>
 
@@ -37,7 +37,7 @@ export default function Home() {
         className="group flex flex-col border-2 hover:border-green-300 duration-300 rounded-xl px-6 py-4 lg:min-w-[600px] max-w-[80%] items-center justify-center mt-16"
       >
         <p className="text-3xl mt-2 font-semibold">
-          Všechy cviků co budeš potřebovat
+          Všechny cviků co budeš potřebovat
         </p>
         <Carousel />
         <button
