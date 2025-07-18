@@ -166,9 +166,9 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="w-full max-w-6xl mx-auto mb-32 px-6 lg:px-8"
+        className="w-full max-w-6xl mx-auto mb-32 lg:px-32 px-8"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-32 items-center">
           {/* About Me Text Content */}
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
@@ -207,12 +207,12 @@ export default function Home() {
           </div>
 
           {/* Picture */}
-          <div className="relative">
+          <div className="relative px-8">
             <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-8 shadow-xl">
               <img
-                src="images/panak_bicepsNP.png"
+                src="images/panak_triceps.png"
                 alt="Martin Drinka"
-                className="w-full h-auto object-contain rounded-xl"
+                className="w-full h-full rounded-xl"
               />
             </div>
             {/* Floating elements for visual appeal */}
@@ -262,14 +262,24 @@ export default function Home() {
 
             {/* Action Button */}
             <div className="text-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <button
+                className="
+                  bg-gradient-to-r from-green-600 to-emerald-600 
+                  hover:from-green-700 hover:to-emerald-700
+                  text-white px-6 py-3 rounded-2xl text-lg font-semibold
+                  transition-all duration-300
+                  shadow-lg hover:shadow-xl
+                  hover:shadow-green-500/25
+                  focus:outline-none
+                  transform
+                  hover:duration-200
+                  hover:scale-[103%] active:scale-95
+                  hover:border-2 hover:border-white border-2
+                "
                 onClick={() => navigate("/muscles")}
-                className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-2xl text-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-green-500/25 group-hover:shadow-green-500/30"
               >
                 Jdu do toho
-              </motion.button>
+              </button>
             </div>
           </div>
         </motion.div>

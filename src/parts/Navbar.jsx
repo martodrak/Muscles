@@ -59,7 +59,7 @@ export default function Navbar() {
                     initial="initial"
                     animate={actualPage === link.href ? "active" : "initial"}
                     whileHover="hover"
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.2 }}
                     style={{ display: "block" }}
                   />
                 </motion.a>

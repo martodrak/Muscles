@@ -26,15 +26,16 @@ export default function Carousel() {
       <div className="flex flex-col items-center justify-center">
         <div className="relative w-[155px] h-[260px]">
           <AnimatePresence mode="wait">
-            <motion.img
+            <motion.div
               key={index}
-              className="absolute inset-0 w-full h-full object-contain"
-              src={musclesData[index].image}
+              className="absolute inset-0 w-full h-full"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-            />
+            >
+              <img src={musclesData[index].image} className="h-[250px] " />
+            </motion.div>
           </AnimatePresence>
         </div>
         <motion.p
@@ -52,15 +53,19 @@ export default function Carousel() {
         <div className="flex flex-col items-center justify-center">
           <div className="relative w-[155px] h-[260px]">
             <AnimatePresence mode="wait">
-              <motion.img
+              <motion.div
                 key={index + 1}
-                className="absolute inset-0 w-full h-full object-contain"
-                src={musclesData[index + 1].image}
+                className="absolute inset-0 w-full h-full"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.05 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-              />
+              >
+                <img
+                  src={musclesData[index + 1].image}
+                  className="h-[250px] "
+                />
+              </motion.div>
             </AnimatePresence>
           </div>
           <motion.p
