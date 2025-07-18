@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
 import Carousel from "../components/Carousel";
+import { useData } from "../parts/Memory";
 
 export default function Home() {
+  const { screenSize } = useData();
   const navigate = useNavigate();
 
   return (
@@ -12,13 +14,13 @@ export default function Home() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col items-center justify-center mt-16 mb-20"
+        className="flex flex-col items-center justify-center lg:mt-16 mt-32 lg:mb-20 mb-10"
       >
-        <p className="lg:text-5xl text-3xl font-semibold text-center">
-          První den V gymu?
+        <p className="lg:text-5xl text-4xl font-semibold text-center">
+          První den v gymu?
         </p>
-        <p className="ml-16 lg:ml-64 text-2xl lg:text-4xl lg:mt-6 mt-4">
-          tak to jsi správně!
+        <p className="ml-16 lg:ml-32 text-2xl lg:text-3xl lg:mt-6 mt-4">
+          tak to jsi tady správně!
         </p>
       </motion.div>
 
@@ -26,7 +28,7 @@ export default function Home() {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="lg:w-[25%] w-[50%] mb-24"
+        className="lg:w-[25%] w-[50%] mb-[200px] lg:mb-[170px]"
         src="images/logoFinal.png"
       />
 
@@ -35,10 +37,10 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="max-w-6xl mx-auto mb-32 px-6 lg:px-8"
+        className="max-w-6xl mx-auto mb-32 lg:mb-64 px-6 lg:px-8"
       >
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+        <div className="lg:text-center mb-8 lg:mb-16">
+          <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-4">
             Pro koho je aplikace určena?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -49,8 +51,12 @@ export default function Home() {
 
         <div className="grid lg:grid-cols-3 gap-8">
           <motion.div
-            whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 border-2 border-green-200 shadow-lg hover:shadow-xl transition-all duration-100 relative overflow-hidden group"
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              y: -5,
+              scale: 1.02,
+            }}
+            className="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 border-2 border-green-200 shadow-lg hover:shadow-xl transition-shadow duration-500 relative overflow-hidden group"
           >
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-100"></div>
@@ -59,19 +65,15 @@ export default function Home() {
               <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-100">
                 <span className="text-4xl">🎯</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-700 transition-colors duration-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-700 transition-colors duration-300">
                 Fitness Začátečníci
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                Perfektní pro ty, kteří začínají svou fitness cestu. Nauč se
-                správnou formu a pochop, které svaly procvičuješ.
+                Ideální pro ty, kteří s cvičením začínají. Nauč se správnou
+                formu a pochop, které svaly zapojuješ.
               </p>
               <div className="mt-6 pt-4 border-t border-green-200">
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                    Základní anatomie
-                  </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
                     Správná technika
@@ -86,17 +88,21 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-gradient-to-br from-white to-emerald-50 rounded-3xl p-8 border-2 border-emerald-200 shadow-lg hover:shadow-xl transition-all duration-100 relative overflow-hidden group"
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              y: -5,
+              scale: 1.02,
+            }}
+            className="bg-gradient-to-br from-white to-emerald-50 rounded-3xl p-8 border-2 border-emerald-200 shadow-lg hover:shadow-xl  transition-shadow duration-500  relative overflow-hidden group"
           >
             {/* Background decoration */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-100"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
 
             <div className="relative z-10">
               <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-100">
                 <span className="text-4xl">💪</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-700 transition-colors duration-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-700 transition-colors duration-300">
                 Gym Nadšenci
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -105,10 +111,6 @@ export default function Home() {
               </p>
               <div className="mt-6 pt-4 border-t border-emerald-200">
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
-                    Pokročilá anatomie
-                  </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
                     Optimalizace tréninku
@@ -123,8 +125,12 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-gradient-to-br from-white to-teal-50 rounded-3xl p-8 border-2 border-teal-200 shadow-lg hover:shadow-xl transition-all duration-100 relative overflow-hidden group"
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              y: -5,
+              scale: 1.02,
+            }}
+            className="bg-gradient-to-br from-white to-teal-50 rounded-3xl p-8 border-2 border-teal-200 shadow-lg hover:shadow-xl transition-shadow duration-500 relative overflow-hidden group"
           >
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-teal-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-100"></div>
@@ -133,7 +139,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-100">
                 <span className="text-4xl">🧠</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-700 transition-colors duration-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-700 transition-colors duration-300">
                 Studenti Anatomie
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -146,10 +152,7 @@ export default function Home() {
                     <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
                     Detailní anatomie
                   </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
-                    Interaktivní učení
-                  </li>
+
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
                     Vzdělávací obsah
@@ -162,79 +165,142 @@ export default function Home() {
       </motion.div>
 
       {/* About Me Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className="w-full max-w-6xl mx-auto mb-32 lg:px-32 px-8"
-      >
-        <div className="grid lg:grid-cols-2 gap-32 items-center">
-          {/* About Me Text Content */}
-          <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              O mně
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Jmenuji se Martin Drinka a jsem nadšenec do programování, fitness
-              a vzdělávání. Tento projekt vznikl z mé touhy propojit svět
-              technologií a zdravého životního stylu.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Věřím, že každý může najít cestu ke zdravějšímu tělu, když má
-              správné informace a motivaci. Proto jsem vytvořil tuto aplikaci –
-              abych pomohl ostatním lépe pochopit své tělo, naučit se správně
-              cvičit a dosáhnout svých cílů.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Pokud máš otázky, nebo se chceš jen podělit o svůj příběh, neváhej
-              mě kontaktovat. Společně můžeme posouvat hranice toho, co je
-              možné!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <button
-                onClick={() => navigate("/muscles")}
-                className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors duration-300"
-              >
-                Prozkoumat svaly
-              </button>
-              <button
-                onClick={() => navigate("/contact")}
-                className="px-6 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-semibold rounded-lg transition-all duration-300"
-              >
-                Kontaktovat mě
-              </button>
+
+      {screenSize.width > 720 ? (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="w-full max-w-6xl mx-auto lg:mb-64 mb-32 lg:px-32 px-8"
+        >
+          <div className="grid grid-cols-2 gap-16 items-center">
+            {/* About Me Text Content */}
+            <div className="space-y-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                O mně
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Jsem Martin Drinka – baví mě programování, fitness a učení se
+                novým věcem. Tento projekt spojuje technologie a zdravý životní
+                styl.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Věřím, že se zdravím může začít každý, když má správné informace
+                a motivaci. Aplikace pomáhá lépe poznat vlastní tělo a naučit se
+                cvičit chytře.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Máš otázky nebo se chceš podělit o svůj příběh? Ozvi se – rád si
+                poslechnu tvou cestu!
+              </p>
+
+              <div className="flex flex-col sm:flex-row">
+                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                  <button
+                    onClick={() => navigate("/muscles")}
+                    className="px-6 py-3 bg-green-600 hover:bg-green-700  text-white font-semibold rounded-lg transition-colors duration-300"
+                  >
+                    Prozkoumat svaly
+                  </button>
+                  <button
+                    onClick={() => navigate("/contact")}
+                    className="px-6 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-semibold rounded-lg transition-all duration-300"
+                  >
+                    Kontaktovat mě
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Picture */}
+            <div className="relative px-8">
+              <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-8 mt-8 shadow-xl">
+                <img
+                  src="images/panak_triceps.png"
+                  alt="Martin Drinka"
+                  className="w-full h-full rounded-xl"
+                />
+              </div>
+              {/* Floating elements for visual appeal */}
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full opacity-80"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-emerald-400 rounded-full opacity-60"></div>
             </div>
           </div>
-
+        </motion.div>
+      ) : (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="w-full max-w-6xl  lg:mb-64 mb-32 lg:px-32 px-8 bordder-2 rounded-xl py-4 mx-8"
+        >
+          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900">
+            O mně
+          </h2>
           {/* Picture */}
-          <div className="relative px-8">
+          <div className="relative px-8 w-64 mx-auto mt-6">
             <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-8 shadow-xl">
               <img
                 src="images/panak_triceps.png"
                 alt="Martin Drinka"
-                className="w-full h-full rounded-xl"
+                className="w-full lg:h-full rounded-xl"
               />
             </div>
             {/* Floating elements for visual appeal */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-green-500 rounded-full opacity-80"></div>
             <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-emerald-400 rounded-full opacity-60"></div>
           </div>
-        </div>
-      </motion.div>
+          <div className=" gap-8 flex-col mt-10 items-center justify-center">
+            {/* About Me Text Content */}
+            <div className="space-y-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Jsem Martin Drinka – baví mě programování, fitness a učení se
+                novým věcem. Tento projekt spojuje technologie a zdravý životní
+                styl.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Věřím, že se zdravím může začít každý, když má správné informace
+                a motivaci. Aplikace pomáhá lépe poznat vlastní tělo a naučit se
+                cvičit chytře.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Máš otázky nebo se chceš podělit o svůj příběh? Ozvi se – rád si
+                poslechnu tvou cestu!
+              </p>
+              <div>
+                <div className="flex justify-center  gap-4 mt-12">
+                  <button
+                    onClick={() => navigate("/muscles")}
+                    className="px-6 py-3 bg-green-600 hover:bg-green-700  text-white font-semibold rounded-lg transition-colors duration-300"
+                  >
+                    Prozkoumat svaly
+                  </button>
+                  <button
+                    onClick={() => navigate("/contact")}
+                    className="px-6 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-semibold rounded-lg transition-all duration-300"
+                  >
+                    Kontaktovat mě
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
-        className="w-full max-w-6xl mx-auto px-6 lg:px-8 mb-16"
+        className="w-full max-w-6xl mx-auto px-6 lg:px-8"
       >
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Všechny cviky co budeš potřebovat
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Objev detailní svalové skupiny s interaktivními modely a komplexními
-            průvodci cviky
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Objev detailní svalové skupiny s propracovanými modely a video
+            návody k jednotlivým cvikům.
           </p>
         </div>
 

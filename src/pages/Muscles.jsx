@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../components/Card";
 import { useData } from "../parts/Memory";
 
 export default function Muscles() {
   const { musclesData } = useData();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-white flex flex-col items-center justify-center py-16 px-4">
       <div className="max-w-4xl w-full text-center mb-16">

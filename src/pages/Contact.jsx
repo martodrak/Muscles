@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -51,9 +55,9 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg lg:text-xl text-green-900 leading-relaxed font-sans">
-                Jmenuji se Martin Drinka a jsem nadšenec do programování,
-                fitness a vzdělávání. Tento projekt vznikl z mé touhy propojit
-                svět technologií a zdravého životního stylu.
+                Jmenuji se Martin Drinka, rád cvičím a občas i něco programuji.
+                Tento projekt jsem vytvořil abych propojil svět technologií a
+                zdravého životního stylu.
               </p>
               <p className="text-lg lg:text-xl text-green-900 leading-relaxed font-sans">
                 Věřím, že každý může najít cestu ke zdravějšímu tělu, když má
@@ -135,9 +139,9 @@ export default function Contact() {
 
       {/* Contact Footer */}
       <div className="py-12 px-6 lg:px-8 ">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg text-green-700 mb-4 font-sans">
-            Spojme se a vytvořme něco skvělého společně
+        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+          <p className="text-lg text-green-700 mb-4 font-sans max-w-56 lg:max-w-full">
+            "Spojme se a vytvořme něco skvělého společně!"
           </p>
           <div className="flex justify-center space-x-6">
             <a
