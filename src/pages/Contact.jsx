@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <div className="pt-20 pb-16 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -81,7 +81,7 @@ export default function Contact() {
       </div>
 
       {/* Gym Section */}
-      <div className="py-16 px-6 lg:px-8 bg-gradient-to-br from-green-50 to-white">
+      <div className="py-16 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-green-700 mb-6 font-sans">
@@ -134,7 +134,7 @@ export default function Contact() {
       </div>
 
       {/* Contact Footer */}
-      <div className="py-12 px-6 lg:px-8 bg-gradient-to-br from-white to-green-50">
+      <div className="py-12 px-6 lg:px-8 ">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg text-green-700 mb-4 font-sans">
             Spojme se a vytvořme něco skvělého společně

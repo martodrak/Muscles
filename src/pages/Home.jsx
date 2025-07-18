@@ -50,16 +50,16 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-8">
           <motion.div
             whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 border-2 border-green-200 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
+            className="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 border-2 border-green-200 shadow-lg hover:shadow-xl transition-all duration-100 relative overflow-hidden group"
           >
             {/* Background decoration */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-100"></div>
 
             <div className="relative z-10">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-100">
                 <span className="text-4xl">🎯</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-700 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-700 transition-colors duration-100">
                 Fitness Začátečníci
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -87,16 +87,16 @@ export default function Home() {
 
           <motion.div
             whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-gradient-to-br from-white to-emerald-50 rounded-3xl p-8 border-2 border-emerald-200 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
+            className="bg-gradient-to-br from-white to-emerald-50 rounded-3xl p-8 border-2 border-emerald-200 shadow-lg hover:shadow-xl transition-all duration-100 relative overflow-hidden group"
           >
             {/* Background decoration */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-100"></div>
 
             <div className="relative z-10">
-              <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+              <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-100">
                 <span className="text-4xl">💪</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-700 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-700 transition-colors duration-100">
                 Gym Nadšenci
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -124,16 +124,16 @@ export default function Home() {
 
           <motion.div
             whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-gradient-to-br from-white to-teal-50 rounded-3xl p-8 border-2 border-teal-200 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
+            className="bg-gradient-to-br from-white to-teal-50 rounded-3xl p-8 border-2 border-teal-200 shadow-lg hover:shadow-xl transition-all duration-100 relative overflow-hidden group"
           >
             {/* Background decoration */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-teal-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-teal-100 rounded-full -translate-y-16 translate-x-16 opacity-60 group-hover:opacity-80 transition-opacity duration-100"></div>
 
             <div className="relative z-10">
-              <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+              <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-100">
                 <span className="text-4xl">🧠</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-700 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-700 transition-colors duration-100">
                 Studenti Anatomie
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">

@@ -21,12 +21,8 @@ export default function MuscleDetail({ data }) {
       </div>
 
       {/* Image Section */}
-      <div className="mb-16">
-        <img
-          className="w-full max-w-xs md:w-[310px] md:h-[520px] rounded-2xl border-2 border-green-100 shadow-lg"
-          src={image}
-          alt={name}
-        />
+      <div class="w-full px-[25vw]  mt-[4vw] max-ma-[80px] flex justify-center">
+        <img className=" aspect-[310/520] rounded-lg" src={image} alt={name} />
       </div>
 
       {/* Video Section */}
