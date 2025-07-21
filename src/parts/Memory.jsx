@@ -19,7 +19,7 @@ export const Memory = ({ children }) => {
       description:
         "Má dvě hlavní části: klíčkovou a sternální část. Prsní svaly se aktivují při tlačících pohybech. Cvičení: bench press, tlak s jednoručkami. Pohyb: stlačení paží směrem k sobě. Pohybové směry: horizontální (při bench pressu) a vertikální (při tlaku nad hlavou).",
       image: "images/animace1panak.png",
-      videoLink: "https://www.w3schools.com/html/mov_bbb.mp4",
+      videoLink: "https://youtu.be/lAyxyaIIzpw",
     },
     {
       name: "Ramenní svaly",
