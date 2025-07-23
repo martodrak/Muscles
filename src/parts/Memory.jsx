@@ -43,7 +43,7 @@ export const Memory = ({ children }) => {
       description:
         "Má tři části: Dlouhá hlava, boční hlava a střední hlava. Aktivuje se při tlacích nebo extendování paží. Cvičení: tricepsové stahování na kladce, kickbacky, bench press s úzkým úchopem. Pohyb: protažení paže a stlačení lokte směrem dolů.",
       image: "images/panak_triceps.png",
-      videoLink: "https://www.youtube.com/embed/2bI4v-34nSs",
+      videoLink: "https://www.youtube.com/embed/lQQ-CZvS_TE",
     },
     {
       name: "Předloketní svaly",
@@ -67,7 +67,7 @@ export const Memory = ({ children }) => {
       description:
         "Zádové svalstvo tvoří trapézové svaly, široký sval zádový, svaly mezi lopatkami a zdvihače lopatek. Tyto svaly se aktivují hlavně při tahových pohybech. Typická cvičení: shyby, přítahy v předklonu, stahování horní kladky. Hlavní funkce: zvedání paží a přitahování rukou směrem k tělu. Pohybové směry: Vertikální tahy – například shyby. Horizontální tahy – například přítahy v předklonu.",
       image: "images/panak_zada.png",
-      videoLink: "https://www.w3schools.com/html/mov_bbb.mp4",
+      videoLink: "https://www.youtube.com/embed/41LV4bORwTY",
     },
     {
       name: "Stehenní svaly",
@@ -75,7 +75,7 @@ export const Memory = ({ children }) => {
       description:
         "Má čtyři části: Rectus femoris, vastus medialis, vastus lateralis, vastus intermedius. Aktivuje se při prodlužování kolene. Cvičení: dřepy, leg press, výpady. Pohyb: extenze kolene.",
       image: "images/panak_stehna.png",
-      videoLink: "https://www.w3schools.com/html/mov_bbb.mp4",
+      videoLink: "https://www.youtube.com/embed/bisFcgqUu5E",
     },
     {
       name: "Hýžďové svaly",
