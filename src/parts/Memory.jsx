@@ -27,7 +27,7 @@ export const Memory = ({ children }) => {
       description:
         "Má tři části: Přední – zvedání paže dopředu, Střední – zvedání paže do stran, Zadní – zvedání paže dozadu. Aktivuje se při tlakových a zvedacích pohybech. Cvičení: shoulder press, boční a přední zdvihy. Pohybové směry: přední, boční a zadní pohyb.",
       image: "images/panak_ramena.png",
-      videoLink: "https://www.youtube.com/embed/2bI4v-34nSs",
+      videoLink: "https://www.youtube.com/embed/k84orAJXKPc",
     },
     {
       name: "Bicepsové svaly",
