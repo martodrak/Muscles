@@ -14,7 +14,7 @@ export default function Home() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col items-center justify-center lg:mt-16 mt-32 lg:mb-20 mb-10"
+        className="flex flex-col items-center justify-center lg:mt-16 mt-32 lg:mb-0 mb-10"
       >
         <p className="lg:text-5xl text-4xl font-semibold text-center">
           První den v gymu?
