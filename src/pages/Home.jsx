@@ -28,7 +28,7 @@ export default function Home() {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="lg:w-[25%] w-[50%] mb-[200px] lg:mb-[170px]"
+        className="lg:w-[70%] w-[100%] mb-[80px] lg:mb-[170px]"
         src="images/panacek.svg"
       />
 
@@ -186,8 +186,8 @@ export default function Home() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Věřím, že se zdravím může začít každý, když má správné informace
-                a motivaci. Tato webová stránka pomáhá lépe poznat vlastní tělo a naučit se
-                cvičit chytře.
+                a motivaci. Tato webová stránka pomáhá lépe poznat vlastní tělo
+                a naučit se cvičit chytře.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Máš otázky nebo se chceš podělit o svůj příběh? Ozvi se – rád si
