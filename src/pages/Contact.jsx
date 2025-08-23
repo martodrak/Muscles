@@ -72,7 +72,7 @@ export default function Contact() {
               </h3>
               <p className="text-green-900 leading-relaxed mb-4 font-sans">
                 Chtěl jsem vytvořit něco, co propojí mé technické dovednosti s
-                vášní pro fitness. Tato aplikace pomáhá lidem lépe porozumět
+                vášní pro fitness. Tato webová stránka pomáhá lidem lépe porozumět
                 svému tělu a učit se interaktivní formou.
               </p>
               <p className="text-green-900 leading-relaxed font-sans">

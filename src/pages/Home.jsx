@@ -186,7 +186,7 @@ export default function Home() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Věřím, že se zdravím může začít každý, když má správné informace
-                a motivaci. Aplikace pomáhá lépe poznat vlastní tělo a naučit se
+                a motivaci. Tato webová stránka pomáhá lépe poznat vlastní tělo a naučit se
                 cvičit chytře.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
