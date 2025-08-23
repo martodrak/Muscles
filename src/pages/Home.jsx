@@ -29,7 +29,7 @@ export default function Home() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         className="lg:w-[25%] w-[50%] mb-[200px] lg:mb-[170px]"
-        src="images/logoFinal.png"
+        src="images/panacek.svg"
       />
 
       {/* Target Audience Section */}
